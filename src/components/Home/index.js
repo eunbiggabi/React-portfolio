@@ -1,14 +1,15 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { HomeContainer, HomeBg, VideoBg, HomeContent, ImageProfile, HomeH1, HomeH3, HomeBtnWrapper, Button } from './Home.styled'
-import Image from '../Assets/images/profile.jpeg'
+import Image from '../Assets/images/home/profile.jpeg'
 import Video from '../Assets/video/video.mp4'
+import { FaArrowDown } from 'react-icons/fa'
 // import { Button }  from '../Button.styled'
 
 export default function Home() {
-    const [hover, setHover] = useState(false);
-    const onHover = () => {
-        setHover(!hover)
-    }
+    // const [hover, setHover] = useState(false);
+    // const onHover = () => {
+    //     setHover(!hover)
+    // }
 
     return (
         <HomeContainer>
@@ -21,7 +22,7 @@ export default function Home() {
                 <HomeH3>A Software Engineer currently residing in Brisbane, Australia</HomeH3>
                 <HomeBtnWrapper>
                     <Button>
-                        About me 
+                        More Info <FaArrowDown style={{"margin-left": "20px"}}/>
                     </Button>    
                 </HomeBtnWrapper>
             </HomeContent>

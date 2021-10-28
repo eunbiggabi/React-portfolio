@@ -41,6 +41,7 @@ export const NavbarLogo = styled(Link)`
 
 export const MobileIcon = styled.div`
     display: none;
+    cursor: pointer;
 
     @media screen and (max-width: 768px) {
         display: block;

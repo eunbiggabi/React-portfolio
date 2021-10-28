@@ -1,13 +1,13 @@
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavbarLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './Navbar.styled'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
                     <NavbarLogo>Kyu</NavbarLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick = { toggle }>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
@@ -16,6 +16,9 @@ const Navbar = () => {
                         </NavItem>
                         <NavItem>
                             <NavLinks to='skills'>Skills</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='archiving'>Archiving</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='my-works'>My Works</NavLinks>
