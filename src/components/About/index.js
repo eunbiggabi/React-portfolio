@@ -1,14 +1,13 @@
 import React from 'react'
 import { AboutContainer, AboutH1, AboutWapper, AboutCategory, CategroyImage, CategoryContentContainer, CategoryContentTitle, CategoryContentValue } from './About.styled'
-// import Name from '../Assets/images/about/person-fill.svg'
-import { Name, Email, Address, Education } from '../Assets/images/about/ImageVariable'
+import { Name, Email, Address, Education } from '../Assets/images/about/ImageVariables'
 
 
 export default function About() {
     return (
         <div>
             <AboutContainer>
-                <AboutH1>About Me</AboutH1>
+                <AboutH1>ABOUT ME</AboutH1>
                 <AboutWapper>
                     <AboutCategory>
                         <CategroyImage src={Name}/>

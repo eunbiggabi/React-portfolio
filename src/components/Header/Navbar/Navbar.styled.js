@@ -10,6 +10,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
+    border-bottom: 2px solid #f4623a;
     z-index: 10;
 
     @media screen and (max-width: 960px) {
