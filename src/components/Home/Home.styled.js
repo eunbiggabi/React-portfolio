@@ -41,7 +41,7 @@ export const HomeContent = styled.div`
     align-items: center;
 `
 
-export const ImageProfile = styled.img`
+export const ProfileImage = styled.img`
     width: 240px;
     height: 240px;
     border-radius: 50%;
