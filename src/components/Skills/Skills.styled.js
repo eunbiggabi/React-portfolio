@@ -37,7 +37,11 @@ export const SkillContentContainer = styled.div`
 
     &:hover {
         transition: all 0.3s ease-in-out;
-        transform: translateY(20px);
+        transform: translateY(10px);
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 0 20px;
     }
 `
 
