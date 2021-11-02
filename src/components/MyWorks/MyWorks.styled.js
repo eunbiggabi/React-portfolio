@@ -55,7 +55,6 @@ export const MyWorkContentInfo = styled.div`
 `
 
 export const MyWorkCarousel = styled.div`
-    position: relative;
 `
 
 export const MyWorkImages = styled.div`
@@ -102,9 +101,8 @@ export const MyWorkImageWrapper = styled.div`
 `
 
 export const MyWorkImage = styled.img`
-    width: 800px;
+    width: 900px;
     height: 600px;
-    border-radius: 10px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -119,12 +117,12 @@ export const MobileImage = styled.img`
 
     @media screen and (max-width: 768px) {
         display: block;
+        border-radius: 20px;
         width: 100%;
     }
 `
 
 export const MyWorkDescriptionWrapper = styled.div`
-    padding: 0 20px;
 `
 
 export const MyWorkDescription = styled.div`
@@ -133,6 +131,7 @@ export const MyWorkDescription = styled.div`
 
     @media screen and (max-width: 768px) {
         padding-left: 0px;
+        width: 360px;
     }
     
 `
@@ -140,16 +139,10 @@ export const MyWorkDescription = styled.div`
 export const MyWorkDescriptionLabel = styled.h4`
     flex: 1;
     color: #f4623a;
+    padding-left: 20px;
 `
 
 export const MyWorkDescriptionValue = styled.h4`
     flex: 3;
     padding-left: 10px;
-`
-export const LabelH4 = styled.h4`
-
-`
-
-export const ValueH4 = styled.h4`
-
 `

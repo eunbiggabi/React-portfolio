@@ -5,6 +5,7 @@ import About from './About';
 import Skills from './Skills';
 import MyWorks from './MyWorks';
 import SliderData from './Assets/images/my-works/marketplace/SliderData';
+import Contact from './Contact';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Skills />
       <MyWorks slides={SliderData}/>
+      <Contact />
     </div>
   );
 }

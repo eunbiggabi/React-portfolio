@@ -12,13 +12,10 @@ const Navbar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about'>About</NavLinks>
+                            <NavLinks to='about' smooth={true} duration={500}>About</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='skills'>Skills</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='archiving'>Archiving</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='my-works'>My Works</NavLinks>

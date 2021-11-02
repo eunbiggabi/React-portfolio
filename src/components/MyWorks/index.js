@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import {MyWorksContainer, MyWorksH1, MyWorksWrapper, MyWorkContentContainer, MyWorkContentWrapper, MyWorkContentTitle, MyWorkContentPeriod, MyWorkContentInfo, MyWorkCarousel, MyWorkImages, MyWorkImageWrapper, MyWorkImage, MyWorkDescription, MyWorkDescriptionLabel, MyWorkDescriptionValue, LeftArrow, RightArrow, MobileImageWraaper,MobileImage, LabelH4, ValueH4, MyWorkDescriptionWrapper} from './MyWorks.styled'
+import {MyWorksContainer, MyWorksH1, MyWorksWrapper, MyWorkContentContainer, MyWorkContentWrapper, MyWorkContentTitle, MyWorkContentPeriod, MyWorkContentInfo, MyWorkCarousel, MyWorkImages, MyWorkImageWrapper, MyWorkImage, MyWorkDescription, MyWorkDescriptionLabel, MyWorkDescriptionValue, LeftArrow, RightArrow, MobileImageWraaper,MobileImage, MyWorkDescriptionWrapper} from './MyWorks.styled'
 import SliderData from '../Assets/images/my-works/marketplace/SliderData';
+import SliderData2 from '../Assets/images/my-works/portfolio-version-1/SliderData2'
 import MobileSliderData from '../Assets/images/my-works/marketplace/mobileImages/MobileSliderData';
-
+import MobileSliderData2 from '../Assets/images/my-works/portfolio-version-1/mobileImages/MobileSliderData2'
 
 
 
@@ -81,40 +82,43 @@ export default function MyWorks({ slides }) {
 
                     <MyWorkContentContainer>
                         <MyWorkContentWrapper>
-                            <MyWorkContentTitle>My First Version Portfoilio</MyWorkContentTitle>
+                            <MyWorkContentTitle>Initial Portfoilio Version</MyWorkContentTitle>
                             <MyWorkContentPeriod>April 2021</MyWorkContentPeriod>
                             <MyWorkContentInfo>
                                 <MyWorkCarousel>
                                     <MyWorkImages>
-                                        <MyWorkImageWrapper>
-                                            <MyWorkImage />
-                                        </MyWorkImageWrapper>
+                                    <LeftArrow onClick={prevSlide}/>
+                                    <RightArrow onClick={nextSlide}/>
+                                        {SliderData2.map((slide, index) => {
+                                            return (
+                                                <MyWorkImageWrapper key={index}>
+                                                    {index === current && (<MyWorkImage src={slide.image} alt={slide.alt}/>)}
+                                                </MyWorkImageWrapper>
+                                            )
+                                        })}
+                                        {MobileSliderData2.map((slide, index) => {
+                                            return(
+                                                <MobileImageWraaper key={index}>
+                                                    {index === current && (<MobileImage src={slide.image} alt={slide.alt}/>)}
+                                                </MobileImageWraaper>
+                                            )
+                                        })}
                                     </MyWorkImages>
                                 </MyWorkCarousel>
-                                <MyWorkDescription>
-                                    <MyWorkDescriptionLabel></MyWorkDescriptionLabel>
-                                    <MyWorkDescriptionValue></MyWorkDescriptionValue>
-                                </MyWorkDescription>
-                            </MyWorkContentInfo>
-                        </MyWorkContentWrapper>
-                    </MyWorkContentContainer>
-
-                    <MyWorkContentContainer>
-                        <MyWorkContentWrapper>
-                            <MyWorkContentTitle>Hackathon Food App</MyWorkContentTitle>
-                            <MyWorkContentPeriod>October 2021</MyWorkContentPeriod>
-                            <MyWorkContentInfo>
-                                <MyWorkCarousel>
-                                    <MyWorkImages>
-                                        <MyWorkImageWrapper>
-                                            <MyWorkImage />
-                                        </MyWorkImageWrapper>
-                                    </MyWorkImages>
-                                </MyWorkCarousel>
-                                <MyWorkDescription>
-                                    <MyWorkDescriptionLabel></MyWorkDescriptionLabel>
-                                    <MyWorkDescriptionValue></MyWorkDescriptionValue>
-                                </MyWorkDescription>
+                                <MyWorkDescriptionWrapper>
+                                    <MyWorkDescription>
+                                        <MyWorkDescriptionLabel>Feature</MyWorkDescriptionLabel>
+                                        <MyWorkDescriptionValue>
+                                            Design Wireframe, Contect Information, Information About Myself, Relevant Personal Projects
+                                        </MyWorkDescriptionValue>
+                                    </MyWorkDescription>
+                                    <MyWorkDescription>
+                                        <MyWorkDescriptionLabel>Front-end</MyWorkDescriptionLabel>
+                                        <MyWorkDescriptionValue>
+                                            HTML, CSS, JavaScript
+                                        </MyWorkDescriptionValue>
+                                    </MyWorkDescription>
+                                </MyWorkDescriptionWrapper>
                             </MyWorkContentInfo>
                         </MyWorkContentWrapper>
                     </MyWorkContentContainer>

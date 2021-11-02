@@ -1,6 +1,6 @@
 import React from 'react'
 import { FrontEnd, BackEnd, Deployment, VersionControl } from '../Assets/images/skills/ImageVariables'
-import { SkillsContainer, SkillsH1, SkillsWrapper, SkillContentContainer, SkillContentTitle, SkillImage, SkillTest } from './Skills.styled'
+import { SkillsContainer, SkillsH1, SkillsWrapper, SkillContentContainer, SkillContentTitle, SkillImage } from './Skills.styled'
 
 export default function Skills() {
     return (
