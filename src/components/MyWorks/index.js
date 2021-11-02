@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import {MyWorksContainer, MyWorksH1, MyWorksWrapper, MyWorkContentContainer, MyWorkContentWrapper, MyWorkContentTitle, MyWorkContentPeriod, MyWorkContentInfo, MyWorkCarousel, MyWorkImages, MyWorkImageWrapper, MyWorkImage, MyWorkDescription, MyWorkDescriptionLabel, MyWorkDescriptionValue, LeftArrow, RightArrow} from './MyWorks.styled'
+import {MyWorksContainer, MyWorksH1, MyWorksWrapper, MyWorkContentContainer, MyWorkContentWrapper, MyWorkContentTitle, MyWorkContentPeriod, MyWorkContentInfo, MyWorkCarousel, MyWorkImages, MyWorkImageWrapper, MyWorkImage, MyWorkDescription, MyWorkDescriptionLabel, MyWorkDescriptionValue, LeftArrow, RightArrow, MobileImageWraaper,MobileImage, LabelH4, ValueH4, MyWorkDescriptionWrapper} from './MyWorks.styled'
 import SliderData from '../Assets/images/my-works/marketplace/SliderData';
+import MobileSliderData from '../Assets/images/my-works/marketplace/mobileImages/MobileSliderData';
 
 
 
@@ -31,11 +32,10 @@ export default function MyWorks({ slides }) {
 
                     <MyWorkContentContainer>
                         <MyWorkContentWrapper>
-                            <MyWorkContentTitle></MyWorkContentTitle>
-                            <MyWorkContentPeriod></MyWorkContentPeriod>
+                            <MyWorkContentTitle>Market Place</MyWorkContentTitle>
+                            <MyWorkContentPeriod>July 2021</MyWorkContentPeriod>
                             <MyWorkContentInfo>
                                 <MyWorkCarousel>
-                                    
                                     <MyWorkImages>
                                     <LeftArrow onClick={prevSlide}/>
                                     <RightArrow onClick={nextSlide}/>
@@ -46,21 +46,43 @@ export default function MyWorks({ slides }) {
                                                 </MyWorkImageWrapper>
                                             )
                                         })}
-                                        
+                                        {MobileSliderData.map((slide, index) => {
+                                            return(
+                                                <MobileImageWraaper key={index}>
+                                                    {index === current && (<MobileImage src={slide.image} alt={slide.alt}/>)}
+                                                </MobileImageWraaper>
+                                            )
+                                        })}
                                     </MyWorkImages>
                                 </MyWorkCarousel>
-                                <MyWorkDescription>
-                                    <MyWorkDescriptionLabel></MyWorkDescriptionLabel>
-                                    <MyWorkDescriptionValue></MyWorkDescriptionValue>
-                                </MyWorkDescription>
+                                <MyWorkDescriptionWrapper>
+                                    <MyWorkDescription>
+                                        <MyWorkDescriptionLabel>Feature</MyWorkDescriptionLabel>
+                                        <MyWorkDescriptionValue>
+                                            Admin Interface, Product Listings, Mobile Friendliness
+                                        </MyWorkDescriptionValue>
+                                    </MyWorkDescription>
+                                    <MyWorkDescription>
+                                        <MyWorkDescriptionLabel>Front-end</MyWorkDescriptionLabel>
+                                        <MyWorkDescriptionValue>
+                                            Ruby on Rails
+                                        </MyWorkDescriptionValue>
+                                    </MyWorkDescription>
+                                    <MyWorkDescription>
+                                        <MyWorkDescriptionLabel>Back-end</MyWorkDescriptionLabel>
+                                        <MyWorkDescriptionValue>
+                                            Postgres
+                                        </MyWorkDescriptionValue>
+                                    </MyWorkDescription>
+                                </MyWorkDescriptionWrapper>
                             </MyWorkContentInfo>
                         </MyWorkContentWrapper>
                     </MyWorkContentContainer>
 
                     <MyWorkContentContainer>
                         <MyWorkContentWrapper>
-                            <MyWorkContentTitle></MyWorkContentTitle>
-                            <MyWorkContentPeriod></MyWorkContentPeriod>
+                            <MyWorkContentTitle>My First Version Portfoilio</MyWorkContentTitle>
+                            <MyWorkContentPeriod>April 2021</MyWorkContentPeriod>
                             <MyWorkContentInfo>
                                 <MyWorkCarousel>
                                     <MyWorkImages>
@@ -79,8 +101,8 @@ export default function MyWorks({ slides }) {
 
                     <MyWorkContentContainer>
                         <MyWorkContentWrapper>
-                            <MyWorkContentTitle></MyWorkContentTitle>
-                            <MyWorkContentPeriod></MyWorkContentPeriod>
+                            <MyWorkContentTitle>Hackathon Food App</MyWorkContentTitle>
+                            <MyWorkContentPeriod>October 2021</MyWorkContentPeriod>
                             <MyWorkContentInfo>
                                 <MyWorkCarousel>
                                     <MyWorkImages>

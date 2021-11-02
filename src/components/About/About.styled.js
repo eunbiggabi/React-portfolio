@@ -59,9 +59,8 @@ export const CategoryContentContainer = styled.div`
 `
 
 export const CategoryContentTitle = styled.h3`
-    color: black;
+    color: #f4623a;
 `
 
 export const CategoryContentValue = styled.p`
-
 `

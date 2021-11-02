@@ -19,10 +19,6 @@ const SliderData = [
         image: require('./new-product.png').default,
         alt: "Sign Up Page"
     },
-    {
-        image: require('./sitemap.png').default,
-        alt: "Site Map for Back-end"
-    },
 ]
 
 export default SliderData;
