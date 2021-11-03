@@ -6,22 +6,47 @@ const Navbar = ({toggle}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavbarLogo>Kyu</NavbarLogo>
+                    <NavbarLogo activeClass="active"
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>Kyu</NavbarLogo>
                     <MobileIcon onClick = { toggle }>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about' smooth={true} duration={500}>About</NavLinks>
+                            <NavLinks activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='skills'>Skills</NavLinks>
+                            <NavLinks activeClass="active"
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>Skills</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='my-works'>My Works</NavLinks>
+                            <NavLinks activeClass="active"
+                                to="my-works"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>My Works</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='contact'>Contact</NavLinks>
+                            <NavLinks activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>

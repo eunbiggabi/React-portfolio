@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-scroll'
 
 
 export const HomeContainer = styled.div`
@@ -96,7 +97,7 @@ export const HomeBtnWrapper = styled.div`
 
 `
 
-export const Button = styled.button` 
+export const Button = styled(Link)` 
     border-radius: 50px;
     white-space: nowrap;
     padding: 14px 48px;

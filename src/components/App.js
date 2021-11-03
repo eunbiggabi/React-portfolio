@@ -10,14 +10,14 @@ import Contact from './Contact';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Home />
-      <About />
-      <Skills />
-      <MyWorks slides={SliderData}/>
-      <Contact />
-    </div>
+      <>
+        <Header />
+        <Home />
+        <About Link id="about"/>
+        <Skills />
+        <MyWorks slides={SliderData}/>
+        <Contact />
+      </>
   );
 }
 

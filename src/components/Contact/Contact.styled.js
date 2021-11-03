@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+// import { Link } from 'react-router-dom'
 
 export const ContactContainer = styled.div`
     display: flex;
@@ -30,6 +31,7 @@ export const ContactLink = styled.button`
     font-size: 60px;
     margin: 20px;
     cursor: pointer;
+    text-decoration: none;
     
 
     &:hover {
@@ -37,3 +39,4 @@ export const ContactLink = styled.button`
         transition: all 300ms ease-in;
     }
 `
+

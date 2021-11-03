@@ -5,7 +5,7 @@ import { SkillsContainer, SkillsH1, SkillsWrapper, SkillContentContainer, SkillC
 export default function Skills() {
     return (
         <div>
-            <SkillsContainer>
+            <SkillsContainer id="skills">
                 <SkillsH1>SKILLS</SkillsH1>
 
                 <SkillsWrapper>

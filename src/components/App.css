@@ -30,6 +30,12 @@ p {
 
 a {
   text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #ff6863;
+  transition: all 300ms ease-in;
 }
 
 ul {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaTimes } from 'react-icons/fa'
-import { Link as LinkS } from 'react-scroll' 
+import { Link } from 'react-scroll' 
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -46,7 +46,7 @@ export const SidebarMenu = styled.ul`
     text-align: center;
 `
 
-export const SidebarLink = styled(LinkS)`
+export const SidebarLink = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;

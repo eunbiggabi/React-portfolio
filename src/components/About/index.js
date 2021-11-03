@@ -6,7 +6,7 @@ import { Name, Email, Address, Education } from '../Assets/images/about/ImageVar
 export default function About() {
     return (
         <div>
-            <AboutContainer>
+            <AboutContainer id="about">
                 <AboutH1>ABOUT ME</AboutH1>
                 <AboutWapper>
                     <AboutCategory>

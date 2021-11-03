@@ -27,7 +27,7 @@ export default function MyWorks({ slides }) {
 
     return (
         <div>
-            <MyWorksContainer>
+            <MyWorksContainer id="my-works">
                 <MyWorksH1>My Works</MyWorksH1>
                 <MyWorksWrapper>
 
